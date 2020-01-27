@@ -27,7 +27,11 @@
         },
         "frameworks": {
           "netcoreapp2.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/weiyan/hack/LearnGraph/LearnGraph.Movies/LearnGraph.Movies.csproj": {
+                "projectPath": "/Users/weiyan/hack/LearnGraph/LearnGraph.Movies/LearnGraph.Movies.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -39,6 +43,22 @@
       "frameworks": {
         "netcoreapp2.1": {
           "dependencies": {
+            "GraphQL": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "GraphQL.Server.Transports.AspNetCore": {
+              "target": "Package",
+              "version": "[3.4.0, )"
+            },
+            "GraphQL.Server.Transports.WebSockets": {
+              "target": "Package",
+              "version": "[3.4.0, )"
+            },
+            "GraphQL.Server.Ui.Playground": {
+              "target": "Package",
+              "version": "[3.4.0, )"
+            },
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
               "target": "Package",
@@ -53,6 +73,60 @@
             "Microsoft.NETCore.App": {
               "target": "Package",
               "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "/Users/weiyan/hack/LearnGraph/LearnGraph.Movies/LearnGraph.Movies.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/weiyan/hack/LearnGraph/LearnGraph.Movies/LearnGraph.Movies.csproj",
+        "projectName": "LearnGraph.Movies",
+        "projectPath": "/Users/weiyan/hack/LearnGraph/LearnGraph.Movies/LearnGraph.Movies.csproj",
+        "packagesPath": "/Users/weiyan/.nuget/packages/",
+        "outputPath": "/Users/weiyan/hack/LearnGraph/LearnGraph.Movies/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/weiyan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "GraphQL": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
               "autoReferenced": true
             }
           },

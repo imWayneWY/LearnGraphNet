@@ -7,6 +7,10 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using LearnGraph.Movies.Services;
+using LearnGraph.Movies.Schema;
+using GraphQL;
+using GraphQL.Server;
+using GraphQL.Server.Ui.Playground;
 
 namespace LearnGraph.Api
 {
@@ -16,8 +20,21 @@ namespace LearnGraph.Api
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddScoped<IMovieServices, MovieServices>();
-            services.AddScoped<IActorService, ActorService>();
+            services.AddSingleton<IMovieServices, MovieServices>();
+            services.AddSingleton<IActorService, ActorService>();
+            services.AddSingleton<MovieType>();
+            services.AddSingleton<ActorType>();
+            services.AddSingleton<MovieRatingEnum>();
+            services.AddSingleton<MoviesQuery>();
+            services.AddSingleton<MoviesSchema>();
+            services.AddSingleton<IDependencyResolver>(s => new FuncDependencyResolver(s.GetRequiredService));
+
+            services.AddGraphQL(option => {
+                option.EnableMetrics = true;
+                option.ExposeExceptions = true;
+            })
+            .AddWebSockets()
+            .AddDataLoader();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -28,10 +45,10 @@ namespace LearnGraph.Api
                 app.UseDeveloperExceptionPage();
             }
 
-            app.Run(async (context) =>
-            {
-                await context.Response.WriteAsync("Hello World!");
-            });
+            app.UseWebSockets();
+            app.UseGraphQLWebSockets<MoviesSchema>("/graphql");
+            app.UseGraphQL<MoviesSchema>("/graphql");
+            app.UseGraphQLPlayground(new GraphQLPlaygroundOptions());
         }
     }
 }

@@ -41,7 +41,7 @@
           "dependencies": {
             "GraphQL": {
               "target": "Package",
-              "version": "(, )"
+              "version": "[2.4.0, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",

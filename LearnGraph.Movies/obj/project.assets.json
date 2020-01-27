@@ -3454,7 +3454,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "GraphQL",
+      "GraphQL >= 2.4.0",
       "NETStandard.Library >= 2.0.3"
     ]
   },
@@ -3499,7 +3499,7 @@
         "dependencies": {
           "GraphQL": {
             "target": "Package",
-            "version": "(, )"
+            "version": "[2.4.0, )"
           },
           "NETStandard.Library": {
             "suppressParent": "All",

@@ -1,0 +1,9 @@
+/Users/weiyan/hack/LearnGraph/LearnGraph.Movies/bin/Debug/netstandard2.0/LearnGraph.Movies.deps.json
+/Users/weiyan/hack/LearnGraph/LearnGraph.Movies/bin/Debug/netstandard2.0/LearnGraph.Movies.dll
+/Users/weiyan/hack/LearnGraph/LearnGraph.Movies/bin/Debug/netstandard2.0/LearnGraph.Movies.pdb
+/Users/weiyan/hack/LearnGraph/LearnGraph.Movies/obj/Debug/netstandard2.0/LearnGraph.Movies.csprojAssemblyReference.cache
+/Users/weiyan/hack/LearnGraph/LearnGraph.Movies/obj/Debug/netstandard2.0/LearnGraph.Movies.csproj.CoreCompileInputs.cache
+/Users/weiyan/hack/LearnGraph/LearnGraph.Movies/obj/Debug/netstandard2.0/LearnGraph.Movies.AssemblyInfoInputs.cache
+/Users/weiyan/hack/LearnGraph/LearnGraph.Movies/obj/Debug/netstandard2.0/LearnGraph.Movies.AssemblyInfo.cs
+/Users/weiyan/hack/LearnGraph/LearnGraph.Movies/obj/Debug/netstandard2.0/LearnGraph.Movies.dll
+/Users/weiyan/hack/LearnGraph/LearnGraph.Movies/obj/Debug/netstandard2.0/LearnGraph.Movies.pdb

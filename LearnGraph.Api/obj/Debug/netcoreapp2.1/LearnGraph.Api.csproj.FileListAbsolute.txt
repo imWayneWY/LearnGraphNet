@@ -1,0 +1,17 @@
+/Users/weiyan/hack/LearnGraph/LearnGraph.Api/bin/Debug/netcoreapp2.1/LearnGraph.Api.deps.json
+/Users/weiyan/hack/LearnGraph/LearnGraph.Api/bin/Debug/netcoreapp2.1/LearnGraph.Api.runtimeconfig.json
+/Users/weiyan/hack/LearnGraph/LearnGraph.Api/bin/Debug/netcoreapp2.1/LearnGraph.Api.runtimeconfig.dev.json
+/Users/weiyan/hack/LearnGraph/LearnGraph.Api/bin/Debug/netcoreapp2.1/LearnGraph.Api.dll
+/Users/weiyan/hack/LearnGraph/LearnGraph.Api/bin/Debug/netcoreapp2.1/LearnGraph.Api.pdb
+/Users/weiyan/hack/LearnGraph/LearnGraph.Api/bin/Debug/netcoreapp2.1/LearnGraph.Movies.dll
+/Users/weiyan/hack/LearnGraph/LearnGraph.Api/bin/Debug/netcoreapp2.1/LearnGraph.Movies.pdb
+/Users/weiyan/hack/LearnGraph/LearnGraph.Api/obj/Debug/netcoreapp2.1/LearnGraph.Api.csprojAssemblyReference.cache
+/Users/weiyan/hack/LearnGraph/LearnGraph.Api/obj/Debug/netcoreapp2.1/LearnGraph.Api.csproj.CoreCompileInputs.cache
+/Users/weiyan/hack/LearnGraph/LearnGraph.Api/obj/Debug/netcoreapp2.1/LearnGraph.Api.RazorAssemblyInfo.cache
+/Users/weiyan/hack/LearnGraph/LearnGraph.Api/obj/Debug/netcoreapp2.1/LearnGraph.Api.RazorAssemblyInfo.cs
+/Users/weiyan/hack/LearnGraph/LearnGraph.Api/obj/Debug/netcoreapp2.1/LearnGraph.Api.AssemblyInfoInputs.cache
+/Users/weiyan/hack/LearnGraph/LearnGraph.Api/obj/Debug/netcoreapp2.1/LearnGraph.Api.AssemblyInfo.cs
+/Users/weiyan/hack/LearnGraph/LearnGraph.Api/obj/Debug/netcoreapp2.1/LearnGraph.Api.RazorTargetAssemblyInfo.cache
+/Users/weiyan/hack/LearnGraph/LearnGraph.Api/obj/Debug/netcoreapp2.1/LearnGraph.Api.csproj.CopyComplete
+/Users/weiyan/hack/LearnGraph/LearnGraph.Api/obj/Debug/netcoreapp2.1/LearnGraph.Api.dll
+/Users/weiyan/hack/LearnGraph/LearnGraph.Api/obj/Debug/netcoreapp2.1/LearnGraph.Api.pdb
