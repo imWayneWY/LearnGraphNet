@@ -27,6 +27,9 @@ namespace LearnGraph.Api
             services.AddSingleton<MovieRatingEnum>();
             services.AddSingleton<MoviesQuery>();
             services.AddSingleton<MoviesSchema>();
+
+            services.AddSingleton<MovieInputType>();
+            services.AddSingleton<MoviesMutation>();
             services.AddSingleton<IDependencyResolver>(s => new FuncDependencyResolver(s.GetRequiredService));
 
             services.AddGraphQL(option => {

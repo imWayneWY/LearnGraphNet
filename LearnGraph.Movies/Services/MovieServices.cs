@@ -59,7 +59,12 @@ namespace LearnGraph.Movies.Services
         }
         public Task<Movie> GetByIdAsync(int id)
         {
-            return Task.FromResult(_movies.SingleOrDefault(x => x.Id == id));
+            var movie = _movies.SingleOrDefault(x => x.Id == id);
+            if (movie == null)
+            {
+                throw new ArgumentException(String.Format("Movie ID {0} is not correct", id));
+            }
+            return Task.FromResult(movie);
         }
 
         public Task<IEnumerable<Movie>> GetAsync()
@@ -69,7 +74,8 @@ namespace LearnGraph.Movies.Services
 
         public Task<Movie> CreateAsync(Movie movie)
         {
-            throw new NotImplementedException();
+            _movies.Add(movie);
+            return Task.FromResult(movie);
         }
     }
 }
