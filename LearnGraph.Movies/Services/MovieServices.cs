@@ -9,14 +9,16 @@ namespace LearnGraph.Movies.Services
     public class MovieServices: IMovieServices    
     {
         private readonly IList<Movie> _movies;
-        public MovieServices()
+        private readonly IMovieEventService _movieEventService;
+        public MovieServices(IMovieEventService movieEventService)
         {
+            _movieEventService = movieEventService;
             #region Movies
             _movies = new List<Movie>
             {
                 new Movie{
                     Id = 1,
-                    Name = "Forrest Gump",
+                    Name = "Forrest Gum",
                     ActorId = 1,
                     Company = "Paramount Pictures",
                     MovieRating = MovieRating.PG13,
@@ -75,6 +77,17 @@ namespace LearnGraph.Movies.Services
         public Task<Movie> CreateAsync(Movie movie)
         {
             _movies.Add(movie);
+
+            var movieEvent = new MovieEvent
+            {
+                Name = $"Add Movie",
+                MovieId = movie.Id,
+                TimeStamp = DateTime.Now,
+                MovieRating = movie.MovieRating
+            };
+
+            _movieEventService.AddEvent(movieEvent);
+
             return Task.FromResult(movie);
         }
     }

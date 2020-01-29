@@ -7,12 +7,14 @@ namespace LearnGraph.Movies.Schema
         public MoviesSchema(
             IDependencyResolver dependencyResolver,
             MoviesQuery moviesQuery,
-            MoviesMutation moviesMutation
+            MoviesMutation moviesMutation,
+            MoviesScription moviesScription
         )
         {
             DependencyResolver = dependencyResolver;
             Query = moviesQuery;
             Mutation = moviesMutation;
+            Subscription = moviesScription;
         }
     }
 }

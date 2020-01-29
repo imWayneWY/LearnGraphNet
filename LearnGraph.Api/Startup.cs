@@ -30,6 +30,11 @@ namespace LearnGraph.Api
 
             services.AddSingleton<MovieInputType>();
             services.AddSingleton<MoviesMutation>();
+
+            services.AddSingleton<MovieEventType>();
+            services.AddSingleton<IMovieEventService, MovieEventService>();
+            services.AddSingleton<MoviesScription>();
+            
             services.AddSingleton<IDependencyResolver>(s => new FuncDependencyResolver(s.GetRequiredService));
 
             services.AddGraphQL(option => {
